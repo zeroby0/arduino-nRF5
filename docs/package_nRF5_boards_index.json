@@ -251,7 +251,7 @@
               "version": "0.10.0-dev.nrf5"
             }
           ]
-        }
+        },
         {
           "name": "Nordic Semiconductor nRF5 Boards",
           "architecture": "nRF5",
