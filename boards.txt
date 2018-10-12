@@ -912,3 +912,32 @@ Sinobit.menu.softdevice.s130.softdeviceversion=2.0.1
 Sinobit.menu.softdevice.s130.upload.maximum_size=151552
 Sinobit.menu.softdevice.s130.build.extra_flags=-DNRF51 -DS130 -DNRF51_S130
 Sinobit.menu.softdevice.s130.build.ldscript=armgcc_s130_nrf51822_xxaa.ld
+
+DWM1001-DEV.name=decaWave DWM1001 Module Development Board
+
+DWM1001-DEV.upload.tool=sandeepmistry:openocd
+DWM1001-DEV.upload.protocol=jlink
+DWM1001-DEV.upload.target=nrf52
+DWM1001-DEV.upload.maximum_size=524288
+DWM1001-DEV.upload.setup_command=transport select swd;
+DWM1001-DEV.upload.use_1200bps_touch=false
+DWM1001-DEV.upload.wait_for_upload_port=false
+DWM1001-DEV.upload.native_usb=false
+
+DWM1001-DEV.bootloader.tool=sandeepmistry:openocd
+
+DWM1001-DEV.build.mcu=cortex-m4
+DWM1001-DEV.build.f_cpu=16000000
+DWM1001-DEV.build.board=DWM1001-DEV
+DWM1001-DEV.build.core=nRF5
+DWM1001-DEV.build.variant=DWM1001-DEV
+DWM1001-DEV.build.variant_system_lib=
+DWM1001-DEV.build.extra_flags=-DNRF52
+DWM1001-DEV.build.float_flags=-mfloat-abi=hard -mfpu=fpv4-sp-d16
+DWM1001-DEV.build.ldscript=nrf52_xxaa.ld
+
+DWM1001-DEV.build.lfclk_flags=-DUSE_LFXO
+
+DWM1001-DEV.menu.softdevice.none=None
+DWM1001-DEV.menu.softdevice.none.softdevice=none
+DWM1001-DEV.menu.softdevice.none.softdeviceversion=
