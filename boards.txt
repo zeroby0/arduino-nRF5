@@ -928,7 +928,7 @@ DWM1001-DEV.bootloader.tool=sandeepmistry:openocd
 
 DWM1001-DEV.build.mcu=cortex-m4
 DWM1001-DEV.build.f_cpu=16000000
-DWM1001-DEV.build.board=DWM1001-DEV
+DWM1001-DEV.build.board=DWM1001_DEV
 DWM1001-DEV.build.core=nRF5
 DWM1001-DEV.build.variant=DWM1001-DEV
 DWM1001-DEV.build.variant_system_lib=
