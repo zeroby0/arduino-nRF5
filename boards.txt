@@ -941,3 +941,10 @@ DWM1001-DEV.build.lfclk_flags=-DUSE_LFXO
 DWM1001-DEV.menu.softdevice.none=None
 DWM1001-DEV.menu.softdevice.none.softdevice=none
 DWM1001-DEV.menu.softdevice.none.softdeviceversion=
+
+DWM1001-DEV.menu.softdevice.s132=S132
+DWM1001-DEV.menu.softdevice.s132.softdevice=s132
+DWM1001-DEV.menu.softdevice.s132.softdeviceversion=2.0.1
+DWM1001-DEV.menu.softdevice.s132.upload.maximum_size=409600
+DWM1001-DEV.menu.softdevice.s132.build.extra_flags=-DNRF52 -DS132 -DNRF51_S132
+DWM1001-DEV.menu.softdevice.s132.build.ldscript=armgcc_s132_nrf52832_xxaa.ld
