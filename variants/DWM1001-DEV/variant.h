@@ -32,16 +32,16 @@ extern "C"
 #endif // __cplusplus
 
 // Number of pins defined in PinDescription array
-#define PINS_COUNT           (29u)
-#define NUM_DIGITAL_PINS     (13u)
+#define PINS_COUNT           (27u)
+#define NUM_DIGITAL_PINS     (11u)
 #define NUM_ANALOG_INPUTS    (2u)
 #define NUM_ANALOG_OUTPUTS   (0u)
 
 // LEDs
-#define PIN_LEDRT            (24)
-#define PIN_LEDRB            (25)
-#define PIN_LEDG             (26)
-#define PIN_LEDB             (27)
+#define PIN_LEDRT            (22)
+#define PIN_LEDRB            (23)
+#define PIN_LEDG             (24)
+#define PIN_LEDB             (25)
 #define LED_BUILTIN          PIN_LEDRT
 static const uint8_t LED_RED_TOP = PIN_LEDRT ;
 static const uint8_t LED_RED_BOT = PIN_LEDRB ;
@@ -49,15 +49,15 @@ static const uint8_t LED_GREEN   = PIN_LEDG ;
 static const uint8_t LED_BLUE    = PIN_LEDB ;
 
 // Button
-#define PIN_BUTTON           (28)
+#define PIN_BUTTON           (26)
 
 static const uint8_t BTN = PIN_BUTTON ;
 
 /*
  * Analog pins
  */
-#define PIN_A0               (11)
-#define PIN_A1               (15)
+#define PIN_A0               (9)
+#define PIN_A1               (10)
 
 static const uint8_t A0  = PIN_A0 ; // AIN2
 static const uint8_t A1  = PIN_A1 ; // AIN1
@@ -67,16 +67,16 @@ static const uint8_t A1  = PIN_A1 ; // AIN1
  * Serial interfaces
  */
 // Serial
-#define PIN_SERIAL_RX       (15)
-#define PIN_SERIAL_TX       (16)
+#define PIN_SERIAL_RX       (13)
+#define PIN_SERIAL_TX       (14)
 
 /*
  * SPI Interfaces
  */
 #define SPI_INTERFACES_COUNT 2
 
-#define PIN_SPI_MISO         (10)
-#define PIN_SPI_MOSI         (9)
+#define PIN_SPI_MISO         (8)
+#define PIN_SPI_MOSI         (7)
 #define PIN_SPI_SCK          (PIN_A0)
 
 static const uint8_t SS   = PIN_A1 ;
@@ -84,10 +84,10 @@ static const uint8_t MOSI = PIN_SPI_MOSI ;
 static const uint8_t MISO = PIN_SPI_MISO ;
 static const uint8_t SCK  = PIN_SPI_SCK ;
 
-#define PIN_SPI1_SS          (17)
-#define PIN_SPI1_MISO        (18)
-#define PIN_SPI1_MOSI        (19)
-#define PIN_SPI1_SCK         (20)
+#define PIN_SPI1_SS          (15)
+#define PIN_SPI1_MISO        (16)
+#define PIN_SPI1_MOSI        (17)
+#define PIN_SPI1_SCK         (18)
 
 static const uint8_t SS1   = PIN_SPI1_SS ;
 static const uint8_t MOSI1 = PIN_SPI1_MOSI ;
@@ -99,8 +99,8 @@ static const uint8_t SCK1  = PIN_SPI1_SCK ;
  */
 #define WIRE_INTERFACES_COUNT 1
 
-#define PIN_WIRE_SDA         (13)
-#define PIN_WIRE_SCL         (14)
+#define PIN_WIRE_SDA         (11)
+#define PIN_WIRE_SCL         (12)
 
 static const uint8_t SDA = PIN_WIRE_SDA;
 static const uint8_t SCL = PIN_WIRE_SCL;
@@ -113,13 +113,13 @@ static const uint8_t SCL = PIN_WIRE_SCL;
 /*
  * Other DWM1001 internal IOs
  */
-#define PIN_DW_RST           (21)
-#define PIN_DW_IRQ           (22)
+#define PIN_DW_RST           (19)
+#define PIN_DW_IRQ           (20)
 
 static const uint8_t DW_RST = PIN_DW_RST;
 static const uint8_t DW_IRQ = PIN_DW_IRQ;
 
-#define PIN_ACC_IRQ          (23)
+#define PIN_ACC_IRQ          (21)
 
 static const uint8_t ACC_IRQ = PIN_ACC_IRQ;
 
