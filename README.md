@@ -90,6 +90,7 @@ Become a sponsor and get your logo on our README on Github with a link to your s
  * [RedBear Nano 2](https://github.com/redbear/nRF5x#ble-nano-2)
  * [Bluey](https://github.com/electronut/ElectronutLabs-bluey)
  * [hackaBLE](https://github.com/electronut/ElectronutLabs-hackaBLE)
+ * [hackaBLE_v2](https://github.com/electronut/ElectronutLabs-hackaBLE)
  * [DWM1001-DEV](https://www.decawave.com/product/dwm1001-development-board/)
 
 ### nRF51
