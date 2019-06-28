@@ -74,3 +74,74 @@ extern "C"
  *----------------------------------------------------------------------------*/
 
 #endif
+
+/*
+
+
+#include <Arduino.h>
+#include <string.h>
+
+int sensorPin = 3;  // P0.014
+int targetPin;
+int limit = 60;
+
+void setup() {
+    Serial.begin(9600);
+    for (int i = 0; i < limit; i++) pinMode(i, OUTPUT);
+    pinMode(sensorPin, INPUT);
+}
+
+int test(int testPin) {
+    if (testPin == sensorPin) return 0;
+    int sensorRead = 0;
+
+    digitalWrite(testPin, HIGH);
+    delay(1);
+    sensorRead = digitalRead(sensorPin);
+    if (sensorRead == LOW) {
+        return 0;
+    }
+
+    digitalWrite(testPin, LOW);
+    delay(1);
+    sensorRead = digitalRead(sensorPin);
+    if (sensorRead == HIGH) {
+        return 0;
+    }
+
+    digitalWrite(testPin, HIGH);
+    delay(1);
+    sensorRead = digitalRead(sensorPin);
+    if (sensorRead == LOW) {
+        return 0;
+    }
+
+    digitalWrite(testPin, LOW);
+    delay(1);
+    sensorRead = digitalRead(sensorPin);
+    if (sensorRead == HIGH) {
+        return 0;
+    }
+
+    return 10;
+}
+
+void loop() {
+
+    for(int i = 0; i < limit; i++) {
+        if(test(i) == 10) {
+            Serial.print("This pin is: ");
+            Serial.println(i);
+            delay(5000);
+        }
+    }
+    Serial.print("x");
+}
+
+
+
+
+
+
+
+ */
